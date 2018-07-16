@@ -1,0 +1,111 @@
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav,
+        .cart {
+            width: 10%;
+        }
+
+        .logo {
+            width: 80%;
+            text-align: center;
+        }
+
+        .logo .a {
+            font-family: 'Indie Flower', cursive;
+            text-decoration: none;
+            font-size: 82px;
+            color: black;
+        }
+
+        .h2 {
+            margin-top: 10px;
+            text-align: center;
+            margin: 4px;
+            font-size: 25px;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .item-grid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+
+        .item {
+            margin-top: 6px;
+            display: flex;
+            width: 48%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item>h1 {
+            font-family: 'Indie Flower', cursive;
+            font-size: 20px;
+        }
+
+        .item>span {
+            font-size: 20px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer .link {
+            margin: 20px 0px 10px 0px;
+            text-decoration: none;
+            font-family: 'Indie Flower', cursive;
+            font-size: 15px;
+            color: black;
+        }
+
+        .demo {
+            padding: 0px;
+            font-family: 'Tajawal', sans-serif;
+            background: black;
+            font-size: 30PX;
+            color: white;
+        }
+
+        .label {
+            display: none;
+        }
+
+        @media screen and (min-width: 640px) {
+            .label {
+                visibility: visible;
+                line-height: 52px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-family: 'Indie Flower', cursive;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .item {
+                margin-top: 6px;
+                display: flex;
+                width: 32%;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
